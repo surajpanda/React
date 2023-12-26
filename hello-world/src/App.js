@@ -1,13 +1,14 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import { Component } from 'react';
-import Greet from './components/Greet';
-import Welcome from './components/Welcome';
-import Hello from './components/Hello';
+// import Greet from './components/Greet';
+// import Welcome from './components/Welcome';
+// import Hello from './components/Hello';
 import Message from './components/Message';
+import Counter from './components/Counter';
 
 /*CHANING ABOVE IMPORT TO PROVE DEFAULT COMPONENT WORKS WITH ANY COMPONENT NAME (it should start with upper case) */
-import MyComponent from './components/Greet';
+// import MyComponent from './components/Greet';
 
 /*IMPORTING ONLY GREET TAG SINCE THAT IS THE ONLY COMPONENT EXPORTED */
 // import { Greet } from './components/Greet';
@@ -102,29 +103,38 @@ import MyComponent from './components/Greet';
 // }
 
 /*MAKING CHANGES FOR PROPS JSX */
-class App extends Component {
+// class App extends Component {
+//   render() {
+//     return (
+//       <div className='App'>
+//         {/* <Greet Name="Shritik" Sequence="0" />
+//         <Greet Name="Shritik1" Sequence="1" />
+//         <Greet Name="Shritik2" Sequence="2" /> */}
+
+//         {/* <Greet Name="Shritik" Sequence="0" >child element for 0</Greet>
+//         <Greet Name="Shritik1" Sequence="1" >child element for 1</Greet>
+//         <Greet Name="Shritik2" Sequence="2" >child element for 2</Greet>
+
+//         <Welcome Name="Shritikwelcome" Sequence="0" >child element for 0</Welcome>
+//         <Welcome Name="Shritikwelcome1" Sequence="1" >child element for 1</Welcome>
+//         <Welcome Name="Shritikwelcome2" Sequence="2" >child element for 2</Welcome> */}
+
+//         {/*CONSTRUCTORS AND ONCLICK EVENT CHANGE*/}
+//         {/* <Message /> */}
+
+//       </div>
+//     )
+//   }
+// }
+
+export class App extends Component {
   render() {
     return (
       <div className='App'>
-        {/* <Greet Name="Shritik" Sequence="0" />
-        <Greet Name="Shritik1" Sequence="1" />
-        <Greet Name="Shritik2" Sequence="2" /> */}
-
-        {/* <Greet Name="Shritik" Sequence="0" >child element for 0</Greet>
-        <Greet Name="Shritik1" Sequence="1" >child element for 1</Greet>
-        <Greet Name="Shritik2" Sequence="2" >child element for 2</Greet>
-
-        <Welcome Name="Shritikwelcome" Sequence="0" >child element for 0</Welcome>
-        <Welcome Name="Shritikwelcome1" Sequence="1" >child element for 1</Welcome>
-        <Welcome Name="Shritikwelcome2" Sequence="2" >child element for 2</Welcome> */}
-
-        {/*CONSTRUCTORS AND ONCLICK EVENT CHANGE*/}
-        <Message />
-
+        <Counter/>
       </div>
     )
   }
 }
-
 
 export default App;
