@@ -1,14 +1,17 @@
-// import logo from './logo.svg';
+import logo from './logo.svg';
 import './App.css';
 import { Component } from 'react';
-// import Greet from './components/Greet';
-// import Welcome from './components/Welcome';
-// import Hello from './components/Hello';
+import Greet from './components/Greet';
+import Welcome from './components/Welcome';
+import Hello from './components/Hello';
 import Message from './components/Message';
 import Counter from './components/Counter';
 
 /*CHANING ABOVE IMPORT TO PROVE DEFAULT COMPONENT WORKS WITH ANY COMPONENT NAME (it should start with upper case) */
-// import MyComponent from './components/Greet';
+import MyComponent from './components/Greet';
+import FunctionClick from './components/FunctionClick';
+import ClassClick from './components/ClassClick';
+import EventBind from './components/EventBind';
 
 /*IMPORTING ONLY GREET TAG SINCE THAT IS THE ONLY COMPONENT EXPORTED */
 // import { Greet } from './components/Greet';
@@ -127,14 +130,52 @@ import Counter from './components/Counter';
 //   }
 // }
 
-export class App extends Component {
+
+//SETSTATE CODE
+// export class App extends Component {
+//   render() {
+//     return (
+//       <div className='App'>
+//         <Counter/>
+//       </div>
+//     )
+//   }
+// }
+
+//DESTRUCTURING PROPS
+// export class App extends Component {
+//   render() {
+//     return (
+//       <div className='App'>
+//        <Greet Name="Shritik 2" Sequence="2" >child element for 1</Greet>
+//        <Welcome Name="Shritikwelcome" Sequence="0" >child element for 0</Welcome>
+//       </div>
+//     )
+//   }
+// }
+
+//USING CLICK EVENT HANDLER
+// class App extends Component {
+//   render() {
+//     return (
+//       <div className='App' >
+//         <FunctionClick />
+//         <ClassClick />
+//       </div>
+//     )
+//   }
+// }
+
+//USING CLICK EVENT BINDING
+class App extends Component {
   render() {
     return (
-      <div className='App'>
-        <Counter/>
+      <div className='App' >
+        <EventBind />
       </div>
     )
   }
 }
+
 
 export default App;
