@@ -12,6 +12,15 @@ import MyComponent from './components/Greet';
 import FunctionClick from './components/FunctionClick';
 import ClassClick from './components/ClassClick';
 import EventBind from './components/EventBind';
+import ParentComponent from './components/ParentComponent';
+import UserGreeting from './components/UserGreeting';
+import NameList from './components/NameList';
+import Stylesheet from './components/Stylesheet';
+import Inline from './components/Inline';
+import './appStyles.css'
+import Styles from './components/appStyles.module.css'
+import Form from './components/Form';
+
 
 /*IMPORTING ONLY GREET TAG SINCE THAT IS THE ONLY COMPONENT EXPORTED */
 // import { Greet } from './components/Greet';
@@ -167,11 +176,72 @@ import EventBind from './components/EventBind';
 // }
 
 //USING CLICK EVENT BINDING
+// class App extends Component {
+//   render() {
+//     return (
+//       <div className='App' >
+//         <EventBind />
+//       </div>
+//     )
+//   }
+// }
+
+//USING CHILD COMPONENT TO CALL PARENT COMPONENT
+//  class App extends Component {
+//   render() {
+//     return (
+//       <div className='App'>
+//         <ParentComponent/>
+//       </div>
+//     )
+//   }
+// }
+
+
+//USING CONDITIONAL EXPRESSION
+//  class App extends Component {
+//   render() {
+//     return (
+//       <div className='App'>
+//         <UserGreeting/>
+//       </div>
+//     )
+//   }
+// }
+
+//USING NAMELIST
+// class App extends Component {
+//   render() {
+//     return (
+//       <div className='App'>
+//         <NameList/>
+//       </div>
+//     )
+//   }
+// }
+
+//CSS EXAMPLE
+// class App extends Component {
+//   render() {
+//     return (
+//       <div className='App'>
+//         {/* <Stylesheet condition={true} />
+//         <Stylesheet condition={false} /> */}
+//         {/* <Inline /> */}
+//         <h2 className='Error' >Error</h2>
+//         <h2 className={Styles.Success} >Success</h2>
+
+//       </div>
+//     )
+//   }
+// }
+
+//FORM CONTROLS
 class App extends Component {
   render() {
     return (
-      <div className='App' >
-        <EventBind />
+      <div className='App'>
+        <Form />
       </div>
     )
   }
